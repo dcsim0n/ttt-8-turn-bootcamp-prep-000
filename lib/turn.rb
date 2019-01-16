@@ -40,7 +40,7 @@ def move(board, i, x_or_o = "X")
   end
 end
 def turn(board)
-  puts "Where would you like to go?"
+  puts "Please enter 1-9:"
 
   input = gets.strip
 
