@@ -37,6 +37,8 @@ end
 def move(board, i, x_or_o = "X")
   if valid_move?(board,i)
     board[i] = x_or_o
+  else
+    turn(board)
   end
 end
 def turn(board)
