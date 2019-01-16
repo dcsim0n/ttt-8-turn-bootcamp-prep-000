@@ -35,5 +35,7 @@ def input_to_index(input)
 end
 
 def move(board, i, x_or_o = "X")
-  board[i] = x_or_o
+  if valid_move?(board,i)
+    board[i] = x_or_o
+  end
 end
