@@ -39,3 +39,11 @@ def move(board, i, x_or_o = "X")
     board[i] = x_or_o
   end
 end
+def turn(board)
+  puts "Where would you like to go?"
+
+  input = gets.strip
+
+  move(board, input_to_index(input))
+  display_board(board)
+end
